@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141618;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.logo h4 {
+  color: #fff;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
+
+.navigation a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.signin-link {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+}
+.signup-link {
+  margin-left: 1rem;
+  color: var(--white);
+  background-color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+}
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--white);
+}
+/* Header.css */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #333;
+  }
+
+  .navigation.show {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+  }
+}

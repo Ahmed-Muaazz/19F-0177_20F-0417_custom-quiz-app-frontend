@@ -1,0 +1,62 @@
+.emailOrPhoneDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 35%;
+  gap: 2rem;
+}
+.activeEmailOrPhone {
+  color: var(--primary_color);
+}
+.signin_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+.signin_form_div {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  gap: 1rem;
+}
+.form_input_signin {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form_input_signin label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.linkTagDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+@media screen and (max-width: 1200px) {
+  .signin_form_div,
+  .linkTagDiv,
+  .emailOrPhoneDiv {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .signin_form_div,
+  .linkTagDiv,
+  .emailOrPhoneDiv {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .linkTagDiv {
+    align-items: self-start;
+  }
+}

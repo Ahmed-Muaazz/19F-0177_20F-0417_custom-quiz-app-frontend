@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.home-header {
+  margin-bottom: 2rem;
+}
+
+.home-main {
+  margin-bottom: 2rem;
+}
+
+.home-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.home-cta button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.cta-signup {
+  background-color: var(--primary);
+}
+
+.cta-login {
+  background-color: var(--secondary);
+}

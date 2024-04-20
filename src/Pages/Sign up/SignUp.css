@@ -1,0 +1,49 @@
+/* SignUp.css */
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--secondary_color);
+
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form_input_div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form_input_signup {
+  width: 30rem;
+}
+
+.required-field span {
+  color: red;
+}
+
+.linkTag {
+  color: var(--black);
+  text-decoration: none;
+  border: none;
+}
+
+.linkTag:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .form_input_signup {
+    width: 100%;
+  }
+
+  .sign-up-container {
+    padding: 10px;
+  }
+}
